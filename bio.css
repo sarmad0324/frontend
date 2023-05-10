@@ -7,12 +7,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    background-color: rgb(10, 10, 119);
+    height: 80px;
+    background-color: rgb(10, 85, 119);
     padding: 0px 40px;
+    position: fixed;
+    width: 100%;
 }
 #img{
-    height: 60px;
+   color: beige;
 }
 #ul-list{
     display: flex;
@@ -61,6 +63,44 @@
 #btn-close{
     display: none;
 }
+#drop{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: end;
+}
+#dp{
+    border: 1px solid gray;
+    border-radius: 360px;
+    height: 40px;
+    width: 40px;
+}
+#drop-menu{
+    display:none ;
+    position: absolute;
+   margin-top: 40px;
+    float: right;
+    width: 180px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: gray;
+}
+#drop-menu li{
+    list-style: none;
+    font-size: 20px;
+    padding: 4px;
+}
+#drop-menu P{
+    font-size: 15px;
+    padding: 4px;
+}
+#s-img img{
+    height: 400px;
+    width: 100%;
+}
+
+
 
 @media (max-width:799px){
     #btn{

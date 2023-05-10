@@ -1,3 +1,4 @@
+//navbar
 const m_open = document.getElementById("btn-open")
 const m_head = document.getElementById("head")
 const m_img = document.getElementById("img")
@@ -37,3 +38,17 @@ m_close.addEventListener("click",function(){
     m_img.style.display='block'
     m_nav.style.display='none'
 })
+
+
+//dropdown
+const Dp=document.getElementById("dp")
+const menu= document.getElementById("drop-menu")
+Dp.addEventListener("click",function(){
+    if (menu.style.display === "none") {
+        menu.style.display = "block";
+      } else {
+        menu.style.display = "none";
+      }
+})
+
+
