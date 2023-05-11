@@ -39,6 +39,9 @@
     background-color: rgb(152, 210, 231);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+#main{
+    padding-top: 80px;
+}
 #btn{
     display: none;
     background: transparent;
@@ -95,9 +98,42 @@
     font-size: 15px;
     padding: 4px;
 }
-#s-img img{
-    height: 400px;
+
+#slider img{
+    max-height: 700px;
     width: 100%;
+    display: block;
+}
+#s-img-2,#s-img-3{
+    display: none;
+}
+
+#l-btn ,#r-btn{
+    cursor: pointer;
+    position: absolute;
+    margin:auto  ;
+    width: auto;
+    padding:10px 20px;
+    top: 45%;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    transition: 0.6s ease;
+    background-color: gray;
+    opacity: 40%;
+    border: 1px solid transparent;
+    border-radius: 360px;
+    margin-left: 20px;
+   
+            
+}
+#r-btn:hover, #l-btn:hover{
+    background-color: black;
+    opacity: 70%;
+}
+#r-btn {
+    right: 0;
+    margin-right: 20px;
 }
 
 
@@ -110,217 +146,15 @@
     #nav{
         display: none;
     } 
-}
-foter{
-    position:top }
-/*
-@media (max-width:599px){
-    #head{
-        display: block;
-        background-color: black;
-    }
-
-    .gi img{
-        border-radius: 360px;
-    }
-    .gi h1{
-        color: grey;
-        text-transform: uppercase;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    .gi{
-        padding: 30px 0px;
-        text-align: center;
-    }
-    #main{
-        height: 100px;
-        margin: 30px;
-        text-align: center;
-         text-transform: uppercase;
-    }
-    footer{
-        background-color:lightgray;
-        padding: 30px;
-        text-align: center; 
-    }
-    #foo{
-        padding: 20px;
-    }
-   
-    .fa-instagram{
-        color: rgb(241, 92, 162);
-        font-size: 40px;
-        padding: 10px;
-    }
-    .fa-square-facebook{
-        color: blue;
-        font-size: 40px;
-        padding: 10px;
-    }
-    .fa-linkedin{
-        color: rgb(60, 60, 243);
-        font-size: 40px;
-        padding: 10px;
-    }
-    .fa-github{
-        color: rgb(0, 0, 2);
-        font-size: 40px;
-        padding: 10px;
+    #l-btn ,#r-btn{
+      margin-top: -100px;
     }
 }
 
-@media (min-width:600px) and (max-width:900px){
-    nav ul li{
-        display: inline;
-        font-weight: bold;
-        padding: 12px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    li:hover{
-        color: gray;
-    }
-    nav{
-        background-color: blanchedalmond;
-        padding: 20px 0px;
-        text-align: center;
-    }
-    nav ul i{
-        visibility: hidden;
-    }
-
-    
-    #head{
-        background-color: black;
-        padding: 20px;
-        display: grid;
-        grid-column-gap:20px ;
-        grid-row-gap: 15px;
-        grid-template-columns: auto  auto 0px; 
-    }
-
-    .gi{
-        padding: 20px;
-        margin: 15px;
-    }
-    .gi img{
-        border-radius: 360px;
-    }
-    .gi h1{
-        padding-top:100px ;
-        float:right;
-        text-transform: uppercase;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color:gray;
-    }
-    #main{
-        height: 100px;
-        text-align: center;
-        margin: 30px;
-    }
-    footer{
-        background-color:lightgray;
-        padding: 30px;
-        text-align: center; 
-    }
-    #foo{
-        padding: 20px;
-    }
+@media (max-width:509px){
    
-    .fa-instagram{
-        color: rgb(241, 92, 162);
-        font-size: 40px;
-        padding: 20px;
+    #l-btn ,#r-btn{
+      margin-top: -170px;
     }
-    .fa-square-facebook{
-        color: blue;
-        font-size: 40px;
-        padding: 20px;
-    }
-    .fa-linkedin{
-        color: rgb(60, 60, 243);
-        font-size: 40px;
-        padding: 20px;
-    }
-    .fa-github{
-        color: rgb(0, 0, 2);
-        font-size: 40px;
-        padding: 20px;
-    }
-   }
+}
 
-@media (min-width:901px){
-    nav ul li{
-        display: inline;
-        font-weight: bold;
-        padding: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    li:hover{
-        color: gray;
-    }
-    nav{
-        background-color: blanchedalmond;
-        padding: 20px 0px;
-        text-align: center;
-    }
-    nav ul i{
-        visibility: hidden;
-    }
-    #head{
-        background-color: black;
-        padding: 20px;
-        display: grid;
-        grid-column-gap:30px ;
-        grid-row-gap: 15px;
-        grid-template-columns: auto  auto 0px; 
-    }
-
-    .gi{
-        padding: 20px;
-        margin: 15px;
-    }
-    .gi img{
-        border-radius: 360px;
-    }
-    .gi h1{
-        padding-top:100px ;
-        color:grey;
-        float:right;
-        text-transform: uppercase;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    #main{
-        height: 100px;
-        margin: 30px;
-        text-align: center;
-    }
-    footer{
-        background-color:lightgray;
-        padding: 30px;
-        text-align: center; 
-    }
-    #foo{
-        padding: 20px;
-    }
-   
-    .fa-instagram{
-        color: rgb(241, 92, 162);
-        font-size: 40px;
-        padding: 20px;
-    }
-    .fa-square-facebook{
-        color: blue;
-        font-size: 40px;
-        padding: 20px;
-    }
-    .fa-linkedin{
-        color: rgba(47, 155, 243, 0.87);
-        font-size: 40px;
-        padding: 20px;
-    }
-    .fa-github{
-        color: rgb(0, 0, 2);
-        font-size: 40px;
-        padding: 20px;
-    }
-   } */

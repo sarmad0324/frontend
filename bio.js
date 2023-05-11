@@ -52,3 +52,38 @@ Dp.addEventListener("click",function(){
 })
 
 
+//slider
+ const img_1=document.getElementById("s-img-1")
+ const img_2=document.getElementById("s-img-2")
+ const img_3=document.getElementById("s-img-3")
+
+i=1
+let y=0;
+function setSlide(n){
+  i+=n
+
+  if(i<2 || i>3){
+    console.log("prev")
+    img_1.style.display='block'
+    img_2.style.display='none'
+    img_3.style.display='none'
+    i=1
+    console.log(i)
+  }else if(i<3&& i>1){
+    img_1.style.display='none'
+    img_2.style.display='block'
+    img_3.style.display='none'
+    //console.log("next")
+    i=2
+    //console.log(i)
+  }
+  else if(i<4&& i>1){
+    img_1.style.display='none'
+    img_2.style.display='none'
+    img_3.style.display='block'
+    //console.log("more next")
+    i=3
+    //console.log(i)
+  }
+
+}
