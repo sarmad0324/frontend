@@ -124,13 +124,11 @@
     border: 1px solid transparent;
     border-radius: 360px;
     margin-left: 20px;
+
    
             
 }
-#r-btn:hover, #l-btn:hover{
-    background-color: black;
-    opacity: 70%;
-}
+
 #r-btn {
     right: 0;
     margin-right: 20px;
@@ -142,19 +140,22 @@
     #btn{
         display: block;
     }
-   
     #nav{
         display: none;
     } 
     #l-btn ,#r-btn{
-      margin-top: -100px;
+      margin-top: -200px;
+      
     }
+  
 }
 
 @media (max-width:509px){
    
     #l-btn ,#r-btn{
-      margin-top: -170px;
+      margin-top: -190px;
+      padding: 4px 8px;
+      font-size: 15px;
     }
 }
 

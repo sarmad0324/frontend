@@ -1,4 +1,5 @@
 //navbar
+
 const m_open = document.getElementById("btn-open")
 const m_head = document.getElementById("head")
 const m_img = document.getElementById("img")
@@ -7,25 +8,26 @@ const m_list = document.getElementById("ul-list")
 const m_link = document.getElementById("links")
 
 const m_close = document.getElementById("btn-close")
-
-
+const dropdown=document.getElementById("drop")
+const s_btn=document.getElementById("s-btn")
  
 m_open.addEventListener("click", function(){
     m_head.style.cssText=`
     display: flex;
     justify-content: space-between;
-    height: 500px;
+    height: 300px;
     `
     m_open.style.display='none'
     m_img.style.display='none'
     m_close.style.display='block'
     m_nav.style.display='block'
-    m_list.style.cssText=`
-    display: block;
-    padding:0px
-    margin:0px
-    `
     
+    m_list.style.cssText=`display:block; height:300px; padding-top:20px ; `
+    m_link.style.cssText=`border:1px solid black ;`
+    
+    dropdown.style.display='none'
+    s_btn.style.display='none'
+   
 })
 m_close.addEventListener("click",function(){
     m_open.style.display='block'
@@ -33,11 +35,17 @@ m_close.addEventListener("click",function(){
     m_head.style.cssText=`
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 80px;
     `
     m_img.style.display='block'
     m_nav.style.display='none'
+    dropdown.style.display='block'
+    s_btn.style.display='block'
+
 })
+
+
+
 
 
 //dropdown

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header id="head">
+    <header id="head" >
         <h1 id="img">~Coding~</h1>
         <nav id="nav">
             <ul id="ul-list">
@@ -36,8 +36,8 @@
             </div>
         </div>
         <div id="btn">
-            <i class="fa-solid fa-bars" name="open" id="btn-open"></i>
-            <i class="fa-solid fa-xmark" name="close" id="btn-close"></i>
+            <i class="fa-solid fa-bars" name="open" id="btn-open" onclick="Btn(1)"></i>
+            <i class="fa-solid fa-xmark" name="close" id="btn-close" onclick="Btn(-1)"></i>
         </div>
     </header>
     
@@ -53,9 +53,10 @@
             <div id="s-img-3">
                 <img src="files/home-bg.jpg" alt="">
             </div>
-            <i id="l-btn" onclick="setSlide(-1)"><</i>
-            <i id="r-btn" onclick="setSlide(1)">></i>
-           
+            <div id="s-btn">
+                <i id="l-btn" onclick="setSlide(-1)"><</i>
+                <i id="r-btn" onclick="setSlide(1)">></i>
+            </div>
         </div>
         
         <section id="s-hero">
